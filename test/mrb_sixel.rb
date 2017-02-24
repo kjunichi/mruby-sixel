@@ -4,5 +4,5 @@
 
 assert("Sixel#hello") do
   t = SixelEncoder.new 
-  assert_equal("hello", t.hello)
+  assert_equal("dummy", t.hello)
 end
