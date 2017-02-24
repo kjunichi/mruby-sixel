@@ -62,6 +62,7 @@ mrb_sixel_encode_from_ppm(mrb_state *mrb, mrb_value self)
   mrb_get_args(mrb, "s", &ppmBuf, &len);
   ppm_header_length = parse_ppm_header(ppmBuf, len, &width, &height, &depth);
   SIXELSTATUS status = output_sixel((unsigned char *)(&ppmBuf[ppm_header_length]), width, height, 256, SIXEL_PIXELFORMAT_RGB888);
+  fflush(stdout);
   return self;
 }
 

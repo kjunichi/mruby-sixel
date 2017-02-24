@@ -109,20 +109,20 @@ parse_ppm_header(char *ppmbuf, int len, int *width, int *height, int *depth)
 
   // PNM TYPE
   int n = readLine(tmpbuf, line, sizeof(line));
-  printf("line = %s\n", line);
+  //printf("line = %s\n", line);
   tmpbuf = &tmpbuf[n];
   headerLength += n;
 
   // width heigth
   n = readLine(tmpbuf, line, sizeof(line));
-  printf("line = %s\n", line);
+  //printf("line = %s\n", line);
   tmpbuf = &tmpbuf[n];
   headerLength += n;
   getImageSize(line, width, height);
-  printf("w, h = %d, %d\n", *width, *height);
+  //printf("w, h = %d, %d\n", *width, *height);
 
   n = readLine(tmpbuf, line, sizeof(line));
-  printf("line = %s\n", line);
+  //printf("line = %s\n", line);
   *depth = atoi(line);
   headerLength += n;
   return headerLength;
