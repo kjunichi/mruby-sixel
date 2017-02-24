@@ -1,5 +1,5 @@
 name: mruby-sixel
-description: sixel for mruby class
+description: Sixel class
 author: Junichi Kajiwara
 website: https://github.com/kjunichi/mruby-sixel
 protocol: git

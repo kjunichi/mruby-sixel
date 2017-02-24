@@ -1,4 +1,4 @@
-class sixel for mruby
+class Sixel
   def bye
     self.hello + " bye"
   end

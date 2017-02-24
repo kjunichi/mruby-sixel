@@ -1,5 +1,5 @@
 # mruby-sixel   [![Build Status](https://travis-ci.org/kjunichi/mruby-sixel.svg?branch=master)](https://travis-ci.org/kjunichi/mruby-sixel)
-sixel for mruby class
+Sixel class
 ## install by mrbgems
 - add conf.gem line to `build_config.rb`
 
@@ -13,9 +13,9 @@ end
 ```
 ## example
 ```ruby
-p sixel for mruby.hi
+p Sixel.hi
 #=> "hi!!"
-t = sixel for mruby.new "hello"
+t = Sixel.new "hello"
 p t.hello
 #=> "hello"
 p t.bye
