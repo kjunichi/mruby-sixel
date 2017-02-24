@@ -1,0 +1,6 @@
+name: mruby-sixel
+description: sixel for mruby class
+author: Junichi Kajiwara
+website: https://github.com/kjunichi/mruby-sixel
+protocol: git
+repository: https://github.com/kjunichi/mruby-sixel.git
