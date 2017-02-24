@@ -1,7 +1,7 @@
 sudo: false
 language: c
 compiler:
-  - gcc
+  - gcc -std=c99
   - clang
 addons:
   apt:
