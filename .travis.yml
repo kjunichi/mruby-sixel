@@ -18,4 +18,6 @@ before_script:
   - cd mruby
   - cp -fp ../mruby-sixel/.travis_build_config.rb build_config.rb
 script:
+  - export CLFAGS=-I$HOME/include
+  - export LDFLAGS=-L$HOME/lib
   - make all test
