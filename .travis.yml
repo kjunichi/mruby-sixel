@@ -19,4 +19,4 @@ before_script:
   - cp -fp ../mruby-sixel/.travis_build_config.rb build_config.rb
 script:
   - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
-  - make all test
+  - CC="gcc -std=c99" make all test
